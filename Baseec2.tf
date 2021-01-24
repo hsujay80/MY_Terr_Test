@@ -10,15 +10,15 @@
   subnet_id              = "subnet-490da022"
 
   provisioner"local-exec" {
-      command = "sudo apt-get update" 
+      command = "apt-get update" 
    }
   
   provisioner"local-exec" {
-         command = "sudo apt-get install open-jdk"
+         command = "apt-get install open-jdk"
    }
   
   provisioner"local-exec" {
-      command = "sudo apt-get install jenkins" 
+      command = "apt-get install jenkins" 
   }
 
   tags = {
