@@ -13,7 +13,13 @@
 
   provisioner"local-exec" {
       command = "sudo apt-get update" 
-      command = "sudo apt-get install open-jdk"
+   }
+  
+  provisioner"local-exec" {
+         command = "sudo apt-get install open-jdk"
+   }
+  
+  provisioner"local-exec" {
       command = "sudo apt-get install jenkins" 
   }
 
