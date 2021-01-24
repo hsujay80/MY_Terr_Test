@@ -4,7 +4,6 @@
 }
  
  resource "aws_instance" "My_Ec2"{
-  name                   = "Jenkins"
   ami                    = "ami-0ebc8f6f580a04647"
   instance_type          = "t2.micro"
   key_name               = "My-key"
