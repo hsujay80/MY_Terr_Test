@@ -1,11 +1,9 @@
- provider "aws" 
- {
+ provider "aws" {
   version = "2.33.0"
   region = "us-east-2"
 }
  
- resource "My_ec2" 
- {
+ resource "My_ec2" {
   name                   = "Jenkins"
   ami                    = "ami-ebd02392"
   instance_type          = "t2.micro"
